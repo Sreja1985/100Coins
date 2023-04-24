@@ -1,0 +1,67 @@
+.card {
+    width: 20%;
+    box-shadow: 0 5px 25px 2px rgb(0, 0, 0, .11);
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: rgb(249, 221, 65);
+    padding: 1rem;
+    margin: 1.5rem;
+}
+
+.card:hover{
+    background-color: rgb(233, 214, 111);
+}
+
+.card__link{
+    text-decoration: none;
+    color: #000;
+}
+
+.coin__image{
+    margin: 2rem;
+    position: relative;  
+    
+}
+
+.coin__image img {
+    width: 150px;
+    height: auto;;
+}
+
+.coin__name {
+    font-size: 1.4rem;
+}
+
+.coin__price {
+    font-size: 1rem;
+    margin-top: .5rem;
+}
+
+@media screen and (max-width: 576px) {
+    .card{
+        width: 100%;   
+    }
+    .coin__image{
+        margin: 1rem;
+        position: relative;  
+        
+    }
+    
+    .coin__name {
+        font-size: 1rem;
+    }
+    
+    .coin__price {
+        font-size: .8rem;
+    }
+  }
+
+
+@media screen and (max-width: 850px) {
+    .card{
+        width: 100%; 
+             
+    }
+
+    
+}

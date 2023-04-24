@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+.App {
+  text-align: center;
+  scroll-behavior: smooth;
+   
+}
+
+.navbar{
+  background-color: rgba(0, 0, 0);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  padding: 2rem 1rem;
+  align-items: center;
+  position: sticky;  
+}
+
+.navbar__item{
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.coin__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 1rem 4rem;  
+}
+
+.search {
+  width: 85%;
+  border-radius: 15px;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  margin: 4rem;
+  padding-left: 1rem;
+}
+
+
+.coin__cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 6rem;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.card__image, .card__data{
+    background-color: rgb(227, 188, 89);
+    border-radius: 15px;
+    height: 300px; 
+    width: 300px; 
+    margin: 5rem; 
+}
+
+.card__image img{
+  margin-bottom: .5rem;
+  padding-top: 1.5rem;
+  width: 150px;
+  height: auto;
+}
+
+.card__math p{
+  padding: .5rem;
+  text-align: left;  
+}
+
+.card__math input{
+  line-height: 1.6rem; 
+  border-radius: 5px;
+  margin-left: 1rem;
+  font-size: 1rem;
+  padding-left: .3rem;
+}
+
+.card__data{
+  padding: 1rem;
+  text-align: left;
+  line-height: 2.5rem;
+}
+
+.card__data p{
+  border-bottom: 1px solid rgb(139, 136, 136);
+  margin-top: .2rem;  
+}
+
+.card__data p:last-child{
+  border-style: none;    
+}
+
+
+@media screen and (max-width: 576px) {
+  .search{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+    .search {
+      margin: 7rem 3rem 0 3rem;
+    }
+    .coin__list{
+      flex-direction: column;
+      margin: 3rem;      
+    }  
+    .navbar{      
+      position: sticky;
+      z-index: 99; 
+      margin-bottom: 2rem;    
+    }
+    .coin__cards{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 3rem 2rem;
+      align-items: center;
+      font-size: 1rem;
+    }
+
+    .card__image, .card__data{
+      margin: 1.5rem; 
+  }
+
+    
+}
