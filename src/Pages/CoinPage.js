@@ -48,7 +48,7 @@ function CoinPage() {
             <img alt={coin.name} src={coin.img} />
             <div className='card__math'>
               <p>
-                <strong>Your: </strong> 
+                <strong>Coins: </strong> 
                 <input 
                   type='text'
                   onChange={e => setMoney(e.target.value)} 
